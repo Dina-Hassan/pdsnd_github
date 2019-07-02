@@ -188,7 +188,7 @@ def user_stats(df, city):
     print('-'*40)
     
     
-def display_data(df):
+def display_raw_data(df):
     display = input('Do you want to see raw data? Yes/No ').strip().lower()
     i = 0
     while display == 'yes':
@@ -207,7 +207,7 @@ def main():
         station_stats(data_frame_1)
         trip_duration_stats(data_frame_1)
         user_stats(data_frame_1, city)
-        display_data(data_frame_2)
+        display_raw_data(data_frame_2)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.strip().lower() != 'yes':
