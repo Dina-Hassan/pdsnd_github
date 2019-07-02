@@ -200,14 +200,14 @@ def display_data(df):
 def main():
     while True:
         city, month, day = get_filters()
-        df1 = load_data(city, month, day)
-        df2 = load_data(city, month, day)
+        data_frame_1 = load_data(city, month, day)
+        data_frame_2 = load_data(city, month, day)
 
-        time_stats(df1)
-        station_stats(df1)
-        trip_duration_stats(df1)
-        user_stats(df1, city)
-        display_data(df2)
+        time_stats(data_frame_1)
+        station_stats(data_frame_1)
+        trip_duration_stats(data_frame_1)
+        user_stats(data_frame_1, city)
+        display_data(data_frame_2)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.strip().lower() != 'yes':
