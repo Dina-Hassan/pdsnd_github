@@ -176,7 +176,7 @@ def user_stats(df, city):
         
         print('\n')
 
-        # TO DO: Display earliest, most recent, and most common year of birth (only applicable to NYC and Chicago)
+        # TO DO: Display earliest, most recent, and most common year of birth of customers for only NYC and Chicago
         min_year = df['Birth Year'].min()
         max_year = df['Birth Year'].max()
         popular_year = df['Birth Year'].mode()[0]
@@ -198,7 +198,7 @@ def display_data(df):
 
 
 def main():
-    while True:
+	while True:
         city, month, day = get_filters()
         df1 = load_data(city, month, day)
         df2 = load_data(city, month, day)
