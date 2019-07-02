@@ -198,6 +198,7 @@ def display_data(df):
 
 
 def main():
+	# The program will run endlessly until user enters no
 	while True:
         city, month, day = get_filters()
         df1 = load_data(city, month, day)
